@@ -1,0 +1,28 @@
+{
+  "name": "angular-rt3app",
+  "version": "2.0.0",
+  "description": "Angular application for rt3api",
+  "author": "traveltripper.io",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravelTripperWeb/angular-rt3app.git"
+  },
+  "keywords": [
+    "rt3api",
+    "angular-rt3app",
+    "reztrip"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TravelTripperWeb/angular-rt3app/issues"
+  },
+  "homepage": "https://github.com/TravelTripperWeb/angular-rt3app#readme"
+}
