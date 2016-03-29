@@ -57,9 +57,41 @@ The available fields are explained in [Recent Bookings API](https://docs.google.
 </div>
 ```
 
+### rt3SearchForm
+
+This directive for building search form and save state for search parameters state.
+Actual search parameters stored in `params` object.
+
+```html
+<form rt3-search-form="searchForm">
+  <label for="arrival_date">Arrival date:</label>
+  <input type="text" id="arrival_date" name="arrival_date" ng-model="searchForm.params.arrival_date">
+  <br>
+  <label for="departure_date">Departure date:</label>
+  <input type="text" id="departure_date" name="departure_date" ng-model="searchForm.params.departure_date">
+  <br>
+  <select name="rooms" id="rooms" ng-model="searchForm.params.rooms">
+    <option value="1" ng-selected="true">1 Room</option>
+    <option value="2">2 Rooms</option>
+    <option value="3">3 Rooms</option>
+  </select>
+  <br>
+  <select name="adults[]" id="adults" ng-model="searchForm.params.adults">
+    <option value="1" ng-selected="true">1 Adult</option>
+    <option value="2">2 Adults</option>
+    <option value="3">3 Adults</option>
+  </select>
+  <br>
+  <select name="children[]" id="children" ng-model="searchForm.params.children">
+    <option value="0" ng-selected="true">0 Children</option>
+    <option value="1">1 Children</option>
+    <option value="2">2 Children</option>
+  </select>
+</form>
+```
+
 # TODO - explain these directives
 
-`rt3SearchForm`,
 `rt3RoomsBrowser`,
 `rt3SpecialRates`,
 `rt3RoomDetails`,
